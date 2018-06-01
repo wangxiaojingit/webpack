@@ -6,10 +6,21 @@
   "scripts": {
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangxiaojingit/webpack.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangxiaojingit/webpack/issues"
+  },
+  "homepage": "https://github.com/wangxiaojingit/webpack#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
     "webpack": "^3.12.0"
   }
 }

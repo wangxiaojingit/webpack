@@ -1,9 +1,21 @@
-let path=require("path");
-//console.log(path.resolve("./dist"))
+
+
 module.exports={
-    entry:"./src/main.js",
+    entry:{
+        main:"./src/main.js",
+        main1:"./src/main1.js"
+    },
     output:{
-        filename:"bundel.js",
-        path:path.resolve(__dirname,"./dist")
+        filename:"[name].js",
+        path:__dirname+"/dist"
+    },
+    module:{
+        rules:[
+            {
+                test:/\.js$/,
+                use:"babel-loader",
+                exclude:/node_modules/
+            }
+        ]
     }
 }

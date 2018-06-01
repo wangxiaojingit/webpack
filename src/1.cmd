@@ -26,3 +26,26 @@
          }
      }
   ```
+
+  ## es6 转换为es5 用babel
+  1 npm install babel-core
+  2 npm install babel-loader
+  
+  让翻译官拥有解析es6语法的功能
+  3 npm install babel-preset-es2015 --save-dev
+  要想把es6翻译成es5 还需要增加一个.babelrc
+  
+  ```
+    {
+      "presets":["es2015"]
+    }
+  ```
+   解析es7语法
+   4 npm install babel-preset-stage-0 --save-dev
+
+   ```
+   {
+     "presets":["es2015","stage-0"]
+   }
+
+   ```
